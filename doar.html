@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>A.me</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="Menu">
+      <h1><a href="index.html"><img id="logo" src="logo.png"></a></h1>
+
+      <nav>
+
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="ongs.html">Ongs</a></li>
+          <li><a href="animais.html">Animais</a></li>
+          <li><a href="doar.html">Quero doar</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+  <form action="https://example.com/salvar-historia" method="post">
+    <label for="nome">Nome do animal:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+    <label for="mensagem">Mensagem</label>
+    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+    <fieldset>
+        <legend>Como prefere o nosso contato?</legend>
+  
+        <label for="radio-email"><input type="radio" value="email" id="radio-email" name="botao"> Email</label>
+  
+        <label for="radio-telefone"><input type="radio" value="telefone" id="radio-telefone" name="botao"> Telefone</label>
+  
+        <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="botao" checked> Whatsapp</label>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
