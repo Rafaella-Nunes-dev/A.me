@@ -107,29 +107,3 @@ nav a {
 	font-size: 20px;
 	margin-top: 10 px;
 }
-
-@media (max-width: 768px) {
-  .Menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    font-size: 18px;
-  }
-
-  iframe, #banner {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .animais li {
-    width: 90%;
-    margin: 10px auto;
-  }
-}
