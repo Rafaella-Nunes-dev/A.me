@@ -1,109 +1,59 @@
-#logo{
-	width: 10%;
-	text-align: left;
-	position: absolute;
-	right: 1200px;
-	bottom: -40px;
-}
 
-p {
-	text-align: center;
-}
-
-.titulo-principal {
-	padding-left: 20px;
-}
-
-.titulo-centralizado {
-	text-align: center;
-	clear: left;
-}
-
-.mapa{
-	text-align: center;
-	padding: 3em 30px;
-}
-
-.video{
-	text-align: center;
-}
-
-
-#banner {
-	width: 100%
-}
-
-header {
-	background: #ffe8ef;
-	padding: 40px 0;
-
-}
-
-.Menu {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
-}
-
-nav {
-	position: absolute;
-	
-	right: 50px;
-	bottom: -20px;
-}
-
-nav li {
-	display: inline;
-	margin: 0 0 0 50px;
+#logo {
+  width: 100px;
+  position: static;
 }
 
 nav a {
-	tect-transform: uppercase;
-	color: #000000;
-	font-weigth: bold;
-	font-size: 30px;
-	text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.produtos {
-	width: 100px;
-	margin: 0 auto;
+.Menu {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.blocos_animais{
-	text-align: center;
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.animais li {
-	display: inline-block;
-	text-align: center;
-	width: 15%;
-	vertical-align: center;
-	margin: 0 1.5%;
-	padding: 10px;
-	background: #ffe8ef;
-	box-sizing: border-box;
-	border-color: #ed5887;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-}
+@media (max-width: 768px) {
+  .Menu {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.animais li:hover h2{
-	font-size: 30px;
-}
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.animais h2 {
-	font-size: 25px;
-	font-weight: bold;
-}
+  nav a {
+    font-size: 18px;
+  }
 
-.img_animais{
-	width: 100%;
-	box-shadow: 5px 5px gray;
-}
+  iframe, #banner {
+    width: 100% !important;
+    height: auto !important;
+  }
 
-.botao {
-	font-size: 20px;
-	margin-top: 10 px;
+  .animais li {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
