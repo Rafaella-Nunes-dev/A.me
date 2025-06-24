@@ -1,35 +1,111 @@
-
-#logo {
-  width: 100px;
-  position: static;
+#logo{
+	width: 10%;
+	text-align: left;
+	position: absolute;
+	right: 1200px;
+	bottom: -40px;
 }
 
-nav a {
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: none;
+p {
+	text-align: center;
+}
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center;
+	clear: left;
+}
+
+.mapa{
+	text-align: center;
+	padding: 3em 30px;
+}
+
+.video{
+	text-align: center;
+}
+
+
+#banner {
+	width: 100%
+}
+
+header {
+	background: #ffe8ef;
+	padding: 40px 0;
+
 }
 
 .Menu {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
 }
 
-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+nav {
+	position: absolute;
+	
+	right: 50px;
+	bottom: -20px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 50px;
+}
+
+nav a {
+	tect-transform: uppercase;
+	color: #000000;
+	font-weigth: bold;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.produtos {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.blocos_animais{
+	text-align: center;
+}
+
+.animais li {
+	display: inline-block;
+	text-align: center;
+	width: 15%;
+	vertical-align: center;
+	margin: 0 1.5%;
+	padding: 10px;
+	background: #ffe8ef;
+	box-sizing: border-box;
+	border-color: #ed5887;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+.animais li:hover h2{
+	font-size: 30px;
+}
+
+.animais h2 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.img_animais{
+	width: 100%;
+	box-shadow: 5px 5px gray;
+}
+
+.botao {
+	font-size: 20px;
+	margin-top: 10 px;
 }
 
 @media (max-width: 768px) {
